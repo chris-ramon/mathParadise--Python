@@ -1,0 +1,33 @@
+$def with(test,correctAnswer,number)
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta content="text/html"; charset="utf-8">
+		<meta name="description" content="">
+		<meta name="keywords" content="">
+		<meta name="author" content="Christian Ramón">
+		<meta name="robots" content="all ,follow, index">
+		<meta name="generator" content="gedit">
+
+		<title></title>
+		
+		<link rel="stylesheet" href="css/mainStyle.css" type="text/css"/>	
+	
+        <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.15/jquery-ui.min.js"></script>
+		<script src="js/mainScript.js" type="text/javascript"></script>
+		<script src="js/jqueryTimer.js" type="text/javascript"></script>
+	<head/>
+
+	<body>
+        <h1>Math Paradise</h1>
+            <h2>First Test</h2>
+                <p>$test</p>
+            <form method="post" action="/result/$number">
+                <input type="text" name="answer">
+                <input type="hidden" name="correctAnswer" value=$correctAnswer>
+                <button type="submit">Answer</button>
+            </form>
+	</body>
+		
+		
+</html>
